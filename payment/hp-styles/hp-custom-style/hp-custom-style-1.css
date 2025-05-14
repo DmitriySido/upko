@@ -1,0 +1,670 @@
+.hp-iframe {
+    width: 100%;
+}
+
+.hp-checkbox {
+    margin-left: 5px;
+}
+
+
+/* FOOTER */
+
+.hp-ajdsfg-Footer {
+    position: relative;
+}
+
+.hp-footer-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hp-footer-icon {
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.Checkbox-StyledInput .Checkbox-tickSvg {
+    display: none;
+    /* по умолчанию скрыта галочка */
+}
+
+
+/* Показываем галочку, когда input:checked */
+
+.Checkbox-Input:checked+.Checkbox-StyledInput .Checkbox-tickSvg {
+    display: block;
+}
+
+.InlineSVG.Icon.Checkbox-tickSvg {
+    margin-right: 20px !important;
+    right: -24px;
+    top: -3px;
+    position: absolute;
+}
+
+.hp-payment-method-inactive {
+    background: #eeeeee;
+}
+
+
+/* .hp-payment-method-inactive:hover div {
+    color: #dadfe5 !important;
+    background: #7a0202;
+} */
+
+.hp-payment-method-active {
+    cursor: pointer;
+}
+
+.hp-RadioButton.active:checked {
+    box-shadow: inset 0 0 0 5px var(--checkout-black);
+}
+
+.RadioButton:checked {
+    box-shadow: inset 0 0 0 1px var(--checkout-input-disabled-color);
+}
+
+#payment-method-accordion-item-title-card {
+    cursor: pointer;
+}
+
+.AccordionButton-expandedClickArea {
+    display: none;
+}
+
+.OrderSummaryColumn {
+    margin-top: calc(var(--checkout-header-size) + var(--space-4)) !important;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .hp-footer-text {
+        justify-content: center;
+    }
+}
+
+
+/* FORM */
+
+.hp-card-form {
+    max-height: 0;
+    /* начальная высота */
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    /* плавное изменение */
+}
+
+.hp-card-form.active {
+    max-height: 1500px;
+    /* максимальная высота, зависит от контента */
+    padding: 0px 5px;
+}
+
+.hp-card-list-icons.inactive {
+    display: none;
+}
+
+
+/* INPUTS */
+
+.email-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+}
+
+.card-number-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.data-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.cvc-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.cardholdername-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.country-select.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.address-input-1.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.address-input-2.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.province-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.city-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+.postal-code-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+    z-index: 1;
+}
+
+
+/* ERROR TEXT */
+
+.hp-error-card {
+    display: none;
+}
+
+.hp-error-card p {
+    font-size: 13px;
+    color: #dc2727;
+}
+
+.hp-error-card.active {
+    display: block;
+}
+
+
+/*  */
+
+.Cardholder-error-text {
+    opacity: 0;
+}
+
+.Cardholder-error-text.active {
+    opacity: 1;
+}
+
+.Cardholder-error-text,
+.biling-address-error-text {
+    font-size: 13px;
+    color: #dc2727;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+/*  */
+
+.biling-address-error-text {
+    opacity: 0;
+}
+
+.biling-address-error-text.active {
+    opacity: 1;
+}
+
+
+/* INPUT ICONS */
+
+.email-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.card-number-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.hp-card-number-icon-list {
+    display: none;
+}
+
+.hp-card-number-icon-list.visible {
+    display: flex;
+}
+
+.data-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.cvc-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.cvc-icon-card {
+    display: none;
+    margin-top: 12px;
+}
+
+.cvc-icon-card.visible {
+    display: block;
+}
+
+.cardName-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.address-1-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.province-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.city-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+.postal-code-error-icon {
+    display: none;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 991.98px){
+  .email-error-icon, .card-number-error-icon, .data-error-icon, .cvc-error-icon, .cvc-icon-card, .cardName-error-icon, .address-1-error-icon, .province-error-icon, .city-error-icon, .postal-code-error-icon{
+    margin-top: 16px;
+  }
+}
+
+.active {
+    display: block;
+}
+
+
+/* SUBMIT BUTTON */
+
+.hp-SubmitButton-Icon-lock.active {
+    opacity: 1;
+}
+
+.hp-button-spinner {
+    opacity: 0;
+}
+
+.hp-button-spinner.active {
+    opacity: 1;
+}
+
+
+/* OVERLAY */
+
+.hp-ajdsfg-Payment {
+    position: relative;
+    height: auto; 
+}
+
+.hp-overlay.active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffff00;
+    left: 0;
+    top: 0;
+    z-index: 99999999999999;
+    overflow: hidden;
+}
+
+
+/* OTP */
+
+.hp-OTP-1-form {
+    display: none;
+}
+
+.hp-OTP-1-form.active {
+    display: block;
+}
+
+
+/* --- */
+
+.hp-OTP-2-form {
+    display: none;
+}
+
+.hp-OTP-2-form.active {
+    display: block;
+}
+
+.otp-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.hp-OTP-2-form .otp-title {
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+.otp-paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.phone-number-label {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.phone-number-input {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.phone-number-input.error {
+    border: 0.1px solid #dc2727;
+    color: #dc2727;
+}
+
+.otp-form-text {
+    font-size: 12px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.hp-button-spinner-2 {
+    opacity: 0;
+}
+
+.hp-button-spinner-2.active {
+    position: absolute;
+    opacity: 1;
+    margin-right: 14px;
+}
+
+.hp-button-spinner-3 {
+    opacity: 0;
+}
+
+.hp-button-spinner-3.active {
+    position: absolute;
+    opacity: 1;
+    margin-right: 14px;
+}
+
+.hp-continue-button:disabled {
+    background: rgb(224, 231, 255);
+    cursor: default;
+}
+
+.hp-continue-button {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    background: rgb(156, 179, 255);
+    color: #fff;
+    padding: 14px 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    transition: all .2s ease-in-out;
+}
+
+.confirm-button-wrapper {
+    display: flex;
+}
+
+.hp-main-form {
+    display: none;
+}
+
+.hp-main-form.active {
+    display: block;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.otp-input:focus {
+  border-color: #007BFF;
+}
+
+.otp-input.inactive{
+  color: rgb(155, 154, 154);
+  background: rgb(232 231 227);
+}
+
+.otp-input.error{
+  border-color: #dc2727;
+}
+
+.hp-otp-text-error{
+  margin-top: -15px;
+  margin-bottom: 10px;
+
+  display: none;
+  transition: all .2s ease;
+}
+
+.hp-otp-text-error.active{
+  display: block;
+}
+
+.hp-otp-form-overlay-2 {
+    /* background: rgba(0, 0, 0, 0.144); */
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 1;
+    display: none;
+    transition: all .2s ease-in-out;
+}
+
+.hp-otp-form-overlay-2.active {
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.hp-smoll-logo-desktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .hp-otp-form-overlay-2.active {
+        width: 100%;
+        height: 100%;
+        min-height: 560px;
+        /* box-shadow: 0px 0 30px #0000005e; */
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        overflow: hidden;
+        display: block;
+        transition: all .2s ease-in-out;
+    }
+    .hp-smoll-logo-desktop {
+        display: none;
+    }
+}
+.hp-loader-otp-form-2 {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.hp-submit-button-text.active {
+    opacity: 1 !important;
+    transition: all .2s linear;
+}
+
+.hp-submit-button:disabled{
+  cursor: default;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+
+
+/*  */
+.icon-card-list{
+  display: flex;
+  position: relative;
+}
+
+.hp-select-card{
+  position: absolute;
+  z-index: 20;
+  right: 9px;
+  top: -26px;
+  opacity: 0;
+  transition: all .2s ease-in-out
+}
+
+.hp-select-card.active{
+  opacity: 1;
+  transition: all .2s ease-in-out
+}
+
+.hp-card-number-icon-list{
+  margin-top: -18px;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all .2s ease-in-out
+}
+
+.hp-card-number-icon-list.hide{
+  opacity: 0 !important;
+  transform: translateX(5px);
+  transition: all .2s ease-in-out;
+  z-index: 19;
+}
+
+.Accordion{
+  border: 0.1px solid transparent;
+  border-radius: 3px;
+  transition: all .4s ease-in-out;
+}
+
+.Accordion.error{
+  border: 0.1px solid #dc2727;
+}
+
+.hp-accardion-error-text{
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #dc2727;
+  margin-top: 5px;
+  font-weight: 500;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.hp-accardion-error-text.error{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.hp-text-gray{
+  color: rgb(143 142 138);
+}
+
+.hp-error-block-card-number{
+  display: none;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+.hp-error-block-card-number.active{
+  display: block;
+}
+
+.input-inactive{
+  box-shadow: 0 0 0px 1000px rgb(232 232 232) inset !important; 
+  color: rgb(143 142 138) ;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.input-inactive:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(232 232 232) inset !important; 
+  -webkit-text-fill-color: rgb(143 142 138) !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-box-shadow: 0 0 0px 1px #e0e0e0 !important;
+
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 9999s ease-out 0s !important;
+}

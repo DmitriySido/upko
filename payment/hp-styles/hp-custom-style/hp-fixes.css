@@ -1,0 +1,9 @@
+@media (hover) {
+    .hp-payment-method-inactive .PaymentMethodFormAccordionItem .AccordionItemCover:hover .PaymentMethodFormAccordionItemTitle {
+        font-weight: 400 !important;
+    }
+}
+
+.hp-payment-method-inactive .AccordionItemHeader--clickable:before {
+    display: none;
+}

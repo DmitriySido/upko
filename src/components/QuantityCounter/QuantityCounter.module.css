@@ -1,0 +1,46 @@
+.counter {
+    display: inline-flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 100px;
+    /* padding: 4px; */
+    gap: 12px;
+    height: 41px;
+    border: 1px solid #e5e5e5;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    padding: 0;
+    outline: none;
+}
+
+.button:disabled {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    color: #000;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.value {
+    min-width: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}

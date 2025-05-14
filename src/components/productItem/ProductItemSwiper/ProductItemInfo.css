@@ -1,0 +1,133 @@
+/* Info block styles for ProductItemInfo */
+
+.product-item__info {
+    flex: 1 1 46%;
+    min-width: 0;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 24px;
+    color: #222;
+}
+
+.product-item__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.product-item__price-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-item__price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ec0101;
+}
+
+.product-item__old-price {
+    font-size: 1.4rem;
+    color: #aaa;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.product-item__badge {
+    background: #ab966f;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-left: 8px;
+}
+
+.product-item__rating-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-item__stars {
+    color: #f5c542;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.product-item__reviews {
+    color: #888;
+    font-size: 1rem;
+}
+
+.product-item__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.product-item__actions .counter {}
+
+.product-item__btn {
+    background: #ab966f;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.product-item__btn:hover {
+    background: #826f4c;
+}
+
+.product-item__availability {
+    font-size: 1rem;
+    color: #222;
+    margin: 20px 0px;
+}
+
+.product-item__discount-info {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.product-item__delivery {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .product-item__info {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-item__title {
+        font-size: 1.3rem;
+    }
+
+    .product-item__price {
+        font-size: 1.2rem;
+    }
+
+    .product-item__btn {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}

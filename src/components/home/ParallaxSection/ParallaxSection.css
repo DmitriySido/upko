@@ -1,0 +1,121 @@
+.parallax-section {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background: url('/parallax/parallax-bg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.32);
+    /* overlay как на макете */
+    z-index: 1;
+}
+
+.container-parallax {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20%;
+    padding-left: 40%;
+}
+
+.parallax-banner {
+    /* background: rgba(34, 34, 34, 0.85); */
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    /* padding: 100px 10px 0px 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.parallax-title {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.parallax-btn {
+    display: inline-block;
+    background: #ab966f;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 14px 40px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    transition: background 0.2s;
+}
+
+.parallax-btn:hover {
+    background: #8c7a56;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 24px;
+    }
+
+    .parallax-banner {
+        padding: 32px 24px;
+    }
+
+    .parallax-title {
+        font-size: 28px;
+    }
+
+    .parallax-section {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax-section {
+        min-height: 340px;
+        background-attachment: scroll;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+    .parallax-banner {
+        padding: 20px 8px;
+        border-radius: 18px;
+        gap: 14px;
+    }
+
+    .parallax-title {
+        font-size: 18px;
+    }
+
+    .parallax-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 18px;
+    }
+}

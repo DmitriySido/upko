@@ -1,0 +1,58 @@
+.experian-check-section {
+    padding: 48px 0;
+    background: #fff;
+}
+
+.experian-check-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.experian-check-button {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 48px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.experian-check-button:hover {
+    background: #444;
+}
+
+.experian-check-button:disabled {
+    background: #888;
+    cursor: not-allowed;
+}
+
+.experian-error {
+    color: #d32f2f;
+    font-size: 14px;
+    padding: 12px;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    background: #ffebee;
+}
+
+.experian-result {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,20 @@
+.video-section {
+    background: #000;
+    padding: 0;
+    width: 100%;
+}
+
+.video-iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 80vh;
+    border: none;
+    background: #000;
+}
+
+@media (max-width: 768px) {
+    .video-iframe {
+        max-height: 60vw;
+    }
+}
