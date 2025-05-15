@@ -32,7 +32,7 @@ const ProductItemInfo: React.FC<ProductItemInfoProps> = ({productData}) => {
       addItem({
         id: productData.index,
         title: productData.title,
-        price: productData.newPrice || productData.price,
+        price: productData.newPrice || productData.price || "",
         quantity,
         image: productData.img,
       })

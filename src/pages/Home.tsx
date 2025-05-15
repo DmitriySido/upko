@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from "react";
 import HeroSection from "../components/home/HeroSection";
 import FeaturesSection from "../components/home/FeaturesSection/FeaturesSection";

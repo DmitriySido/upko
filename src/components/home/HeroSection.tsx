@@ -1,8 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
+
 import heroImg from '../../assets/hero.jpg';
 import heroImg2 from '../../assets/hero2.jpg';
 import heroImg3 from '../../assets/hero3.jpg';

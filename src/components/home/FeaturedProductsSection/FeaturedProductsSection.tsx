@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./FeaturedProductsSection.css";
 
 // Featured Products section, minimal markup, all content centered in .container
