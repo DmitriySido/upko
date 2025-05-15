@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-images-config": "node scripts/generateProductImagesConfig.js",
-    "homepage": "https://DmitriySido.github.io/upko"
+    "homepage": "https://DmitriySido.github.io/upko",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
