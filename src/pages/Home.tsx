@@ -5,7 +5,7 @@ import HeroSection from "../components/home/HeroSection";
 import FeaturesSection from "../components/home/FeaturesSection/FeaturesSection";
 import ThreeImagesSection from "../components/home/ThreeImagesSection/ThreeImagesSection";
 import AboutSection from "../components/home/AboutSection/AboutSection";
-import VideoSection from "../components/home/VideoSection/VideoSection";
+import VideoSection from "../components/home/VideoSection/VideoSection"
 import PartnersSection from "../components/home/PartnersSection/PartnersSection";
 import ParallaxSection from "../components/home/ParallaxSection/ParallaxSection";
 import FeaturedProductsSection from "../components/home/FeaturedProductsSection/FeaturedProductsSection";

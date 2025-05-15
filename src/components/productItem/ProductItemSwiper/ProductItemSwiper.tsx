@@ -21,7 +21,7 @@ const ProductItemSwiper: React.FC<ProductItemSwiperProps> = ({productData}) => {
       console.error(`No images config found for product ${index}`);
       return [];
     }
-    return config.images.map((name) => `/product-images-all/${index}/${name}`);
+    return config.images.map((name) => `/upko/product-images-all/${index}/${name}`);
   };
 
   const images = getProductImages(productData.index);

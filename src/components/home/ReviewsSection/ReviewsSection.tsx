@@ -3,37 +3,37 @@ import "./ReviewsSection.css";
 
 const reviews = [
   {
-    img: "/images/review-1.jpg", // upko05761
+    img: "/upko/images/review-1.jpg", // upko05761
     title: "Simply perfect",
     text: `I want to say that its simply perfect. Great package, a sublime quality and a perfect adjustement. My submissive is really...`,
     name: "Luis Maria Valls Lopez",
   },
   {
-    img: "/images/review-2.jpg", // Masterphoto_b92c532e...
+    img: "/upko/images/review-2.jpg", // Masterphoto_b92c532e...
     title: "It's very pretty",
     text: `As a chess fan this is quite a fun toy. Good build quality, looks beautiful.`,
     name: "Co",
   },
   {
-    img: "/images/review-3.jpg", // 5_73942a84...
+    img: "/upko/images/review-3.jpg", // 5_73942a84...
     title: "Such a clever piece",
     text: `I really love novel restraints, and this one is up there. It's a beautiful showpiece to decorate a pretty submissive.`,
     name: "Co",
   },
   {
-    img: "/images/review-1.jpg", // upko05761
+    img: "/upko/images/review-1.jpg", // upko05761
     title: "Simply perfect",
     text: `I want to say that its simply perfect. Great package, a sublime quality and a perfect adjustement. My submissive is really...`,
     name: "Luis Maria Valls Lopez",
   },
   {
-    img: "/images/review-2.jpg", // Masterphoto_b92c532e...
+    img: "/upko/images/review-2.jpg", // Masterphoto_b92c532e...
     title: "It's very pretty",
     text: `As a chess fan this is quite a fun toy. Good build quality, looks beautiful.`,
     name: "Co",
   },
   {
-    img: "/images/review-3.jpg", // 5_73942a84...
+    img: "/upko/images/review-3.jpg", // 5_73942a84...
     title: "Such a clever piece",
     text: `I really love novel restraints, and this one is up there. It's a beautiful showpiece to decorate a pretty submissive.`,
     name: "Co",

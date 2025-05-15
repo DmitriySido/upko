@@ -45,10 +45,6 @@ button {
     transition: border-color 0.25s;
 }
 
-button:hover {
-    /* border-color: #646cff; */
-}
-
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
@@ -82,4 +78,45 @@ body,
 nav a,
 nav .menu-link {
     color: #fff !important;
+}
+
+
+/* BREADCRUMB */
+.breadcrumb{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.breadcrumb-link, .breadcrumb-path{
+  color: #222222 !important;
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-right: 18px;
+  display: inline-block;
+  position: relative;
+  transition: all .2s ease-in;
+}
+
+.breadcrumb-link:hover{
+  color: #ab966f !important;
+}
+
+.breadcrumb-link::after{
+  content: ">";
+  font-size: 13px;
+  margin-left: 2px;
+  color: #222222;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  top: 6px;
+}
+
+.breadcrumb-path{
+  color: #222222;
+  opacity: 0.6;
 }

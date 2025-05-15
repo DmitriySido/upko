@@ -1,6 +1,6 @@
 export const getProductMarkdown = async (index: number): Promise<string> => {
   try {
-    const response = await fetch(`/src/data/productMarkdownsDesc/${index}.md`);
+    const response = await fetch(`/upko/src/data/productMarkdownsDesc/${index}.md`);
     if (!response.ok) {
       throw new Error(`Failed to load markdown for product ${index}`);
     }

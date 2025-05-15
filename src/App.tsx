@@ -10,11 +10,14 @@ import Products from "./pages/Products";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import ProductItemPage from "./pages/ProductItemPage";
 import "./App.css";
+import ScrollToTop from "./utils/ScrollToTop/ScrollToTop";
+
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/upko/">
+      <ScrollToTop />
         <div style={{background: "#fff", minHeight: "100vh"}}>
           <DiscountBanner />
           <Header />

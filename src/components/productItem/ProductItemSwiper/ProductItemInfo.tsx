@@ -13,19 +13,22 @@ const ProductItemInfo: React.FC<ProductItemInfoProps> = ({productData}) => {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
 
-  const calculateDiscount = () => {
-    if (!productData.newPrice) return null;
-    const oldPrice = parseFloat(
-      productData.price.replace("$", "").replace(",", "")
-    );
-    const newPrice = parseFloat(
-      productData.newPrice.replace("$", "").replace(",", "")
-    );
-    const discount = Math.round(((oldPrice - newPrice) / oldPrice) * 100);
-    return discount > 0 ? discount : null;
+const calculateDiscount = () => {
+  if (!productData.newPrice) return null;
+
+  // Функция для удаления текста из цены
+  const cleanPrice = (price: string) => {
+    return parseFloat(price.replace(/[^0-9.]/g, "")); // Убираем все символы, кроме цифр и точки
   };
 
-  const discount = calculateDiscount();
+  const oldPrice = cleanPrice(productData.price);
+  const newPrice = cleanPrice(productData.newPrice);
+
+  const discount = Math.round(((oldPrice - newPrice) / oldPrice) * 100);
+  return discount > 0 ? discount : null;
+};
+
+const discount = calculateDiscount();
 
   const handleAddToCart = () => {
     dispatch(
@@ -80,7 +83,7 @@ const ProductItemInfo: React.FC<ProductItemInfoProps> = ({productData}) => {
         and <b>Wednesday, 21st May</b>
       </div>
       <div>
-        <img src="/public/Safe_Checkout.png" alt="" />
+        <img src="/upko/public/Safe_Checkout.png" alt="" />
       </div>
     </div>
   );

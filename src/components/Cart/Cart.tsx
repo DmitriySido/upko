@@ -17,20 +17,24 @@ export const Cart: React.FC = () => {
     dispatch(removeItem(id));
   };
 
-  const handleCheckout = () => {
-    window.location.href = "/payment/index.html";
+const calculateSubtotal = () => {
+  const cleanPrice = (price: string) => {
+    return parseFloat(price.replace(/[^0-9.]/g, "")); // Убираем все символы, кроме цифр и точки
   };
 
-  const calculateSubtotal = () => {
-    return items.reduce((total, item) => {
-      const price = parseFloat(item.price.replace("$", "").replace(",", ""));
-      return total + price * item.quantity;
-    }, 0);
-  };
+  return items.reduce((total, item) => {
+    const price = cleanPrice(item.price); // Используем функцию для очистки цены
+    return total + price * item.quantity;
+  }, 0);
+};
 
   const subtotal = calculateSubtotal();
   const shipping = subtotal > 0 ? 0 : 0; // Можно добавить стоимость доставки если нужно
   const total = subtotal + shipping;
+
+  const handleCheckout = () => {
+    window.location.href = `/upko/payment/index.html?siteName=${'Upko'}&totalPrice=${total}`;
+  };
 
   if (!isOpen) return null;
 
