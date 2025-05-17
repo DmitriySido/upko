@@ -172,3 +172,59 @@
 .cart__checkout:hover {
     background: #826f4c;
 }
+
+.header-delivery{
+  padding: 10px 20px 4px;
+}
+
+.header-delivery-text{
+  text-align: left;
+  color: #878787;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.progress-bar_wrappers {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+
+
+.progress-bar_wrapper {
+  width: 100%;
+  height: 9px;
+  background-color: #87878726;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #e0b252;
+  width: 0%;
+  transition: width 0.5s ease;
+  border-radius: 10px;
+}
+
+.delivery-car {
+  position: absolute;
+  top: -10px;
+  transition: left 0.5s ease;
+  z-index: 1;
+}
+
+.true-price{
+  color: #23b2c7;
+}
+
+.good-price{
+  color: #428445;
+}
+
+.false-price{
+  color: #eb001b;
+}

@@ -82,6 +82,7 @@
     margin-bottom: 4px;
     color: #222222;
     font-family: "Poppins", sans-serif;
+    text-align: left !important;
 }
 
 .product-prices {

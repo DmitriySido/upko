@@ -83,7 +83,7 @@ const discount = calculateDiscount();
         and <b>Wednesday, 21st May</b>
       </div>
       <div>
-        <img src="/upko/public/Safe_Checkout.png" alt="" />
+        <img src="/upko/Safe_Checkout.png" alt="" />
       </div>
     </div>
   );

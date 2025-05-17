@@ -4,6 +4,7 @@ import {RootState} from "../../store/store";
 import {removeItem, updateQuantity, closeCart} from "../../store/cartSlice";
 import {QuantityCounter} from "../QuantityCounter";
 import "./Cart.css";
+import ProgressBar from "./ProgressBar/ProgressBar";
 
 export const Cart: React.FC = () => {
   const {items, isOpen} = useSelector((state: RootState) => state.cart);
@@ -47,6 +48,26 @@ const calculateSubtotal = () => {
           <button className="cart__close" onClick={() => dispatch(closeCart())}>
             ×
           </button>
+        </div>
+
+        <div className="header-delivery">
+          <p className="header-delivery-text">
+            {total > 0 && total < 99 ? (
+              <>
+                Almost there, add <span className="true-price">${(100 - total - 1).toFixed(2)}</span> more to get FREE SHIPPING!
+              </>
+            ) : total >= 99 ? (
+              <>
+                <span className="good-price">Congratulations!</span> You've got free shipping!
+              </>
+            ) : (
+              <>
+                Free Shipping for all orders over <span className="false-price">$99.00</span>
+              </>
+            )}
+          </p>
+
+          <ProgressBar progress={total}/>
         </div>
 
         <div className="cart__items">
