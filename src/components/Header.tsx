@@ -87,6 +87,9 @@ const Header: React.FC = () => {
   const dispatch = useDispatch();
   const {items} = useSelector((state: RootState) => state.cart);
   const itemsCount = items.reduce((total, item) => total + item.quantity, 0);
+  
+  const { items: wishlistItems } = useSelector((state: RootState) => state.wishlist);
+  const wishlistCount = wishlistItems.length;
 
   return (
     <>
@@ -117,15 +120,15 @@ const Header: React.FC = () => {
             <Link to="/products" className={navLinkBase}>
               Products
             </Link>
-            <a href="#" className={navLinkBase}>
+            <Link to="/products" className={navLinkBase}>
               Sale
-            </a>
-            <a href="#" className={navLinkBase}>
+            </Link>
+            <Link to="/product/upko-gift-card/83" className={navLinkBase}>
               Gift Card
-            </a>
-            <a href="#" className={navLinkBase}>
-              About
-            </a>
+            </Link>
+            <Link to="/about-us" className={navLinkBase}>
+              About us
+            </Link>
           </nav>
           {/* Center: Logo */}
           <div className="flex justify-center items-center w-[220px] h-full py-1 px-4 box-border ml-12">
@@ -155,18 +158,23 @@ const Header: React.FC = () => {
             >
               <IconAccount />
             </a>
-            <a
-              href="#"
+            <Link
+              to="/wishlist"
               title="Wishlist"
-              className="icon-animate-parent text-white flex items-center ml-[20px] transition-colors duration-200 hover:text-hero-hover"
+              className="icon-animate-parent text-white flex items-center ml-[20px] transition-colors duration-200 hover:text-hero-hover relative"
               style={{color: "white"}}
             >
               <IconHeart />
-            </a>
+              {wishlistCount > 0 && (
+                <span className="absolute -top-2 -right-3 bg-[#c6b491] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {wishlistCount}
+                </span>
+              )}
+            </Link>
             <button
               onClick={() => dispatch(toggleCart())}
               title="Cart"
-              className="icon-animate-parent text-white flex items-center transition-colors duration-200 hover:text-hero-hover relative"
+              className="icon-animate-parent text-white flex items-center transition-colors duration-200 hover:text-hero-hover relative cart-button"
               style={{color: "white"}}
             >
               <IconCart />

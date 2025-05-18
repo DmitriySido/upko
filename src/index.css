@@ -26,11 +26,27 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+}
+
+.error-text{
+  color: #e0b252;
+  padding: 15px 15px 15px 40px;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid #e0b25280;
+  align-items: center;
+}
+
+.error-text svg{
+  margin-bottom: 5px;
+  margin-right: 15px;
 }
 
 button {
@@ -119,4 +135,279 @@ nav .menu-link {
 .breadcrumb-path{
   color: #222222;
   opacity: 0.6;
+}
+
+
+.cart-button{
+  background: transparent;
+}
+
+.cart-button:hover{
+  background: transparent;
+}
+
+footer{
+  text-align: left;
+}
+
+footer h3{
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+footer li{
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+footer li:hover{
+  transition: all .1s ease-in;
+  color: #ab966f;
+}
+
+.footer-get-in-touch-link{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer-get-in-touch-link svg{
+  width: 24px;
+  height: 24px;
+}
+
+.footer-get-in-touch-link:first-child svg{
+  width: 18.73px !important;
+  height: 30px !important;
+}
+
+
+/* ABOUT US */
+.about-us-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+}
+
+.about-us-page img{
+  margin: 0 auto 20px auto;
+  width: 100%;
+}
+
+.about-us-first-img{
+  margin-top: 50px !important;
+}
+
+.about-us-page p {
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.about-us-quote{
+  text-align: center !important;
+  font-size: 22px !important;
+  font-weight: 100;
+  padding: 60px 0px !important;
+  margin-bottom: 60px !important;
+  margin-top: 60px !important;
+}
+
+.about-us-title{
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* Contact Us */
+.contact-us-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+  background: red;
+  min-height: 50vh !important;
+}
+
+.contact-us-page p{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-us-page p:first-child{
+  margin-top: 50px;
+}
+
+
+/* refund-policy  shipping-policy*/
+.refund-policy-page, .shipping-policy-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.shipping-policy-page{
+  min-height: 50vh !important;
+}
+
+.refund-policy-title, .shipping-policy-title{
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.refund-policy-text, .shipping-policy-text{
+  line-height: 150%;
+}
+
+.refund-policy-page p{
+  margin-top: 20px;
+}
+
+.shipping-policy-page p{
+  margin-top: 20px;
+}
+
+
+/* privacy-policy */
+.privacy-policy-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.privacy-policy-page.container{
+  max-width: 600px;
+}
+
+.privacy-policy-title{
+  color: #000;
+  font-size: 29px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.privacy-policy-title.center{
+  text-align: center;
+}
+
+.privacy-policy-paragpraph{
+  font-size: 14px;
+  line-height: 150%;
+  margin-left: 20px;
+}
+
+.privacy-policy-paragpraph.more{
+  margin: 15px;
+}
+
+.privacy-policy-paragpraph.simple{
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.privacy-policy-link{
+  margin: 20px 0px;
+  text-decoration: underline;
+}
+
+/* terms-of-service-page */
+.terms-of-service-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.terms-of-service-page.container{
+  max-width: 600px;
+}
+
+.terms-of-service-title{
+  font-weight: 900;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.terms-of-service-paragraph{
+ margin-bottom: 20px; 
+}
+
+/* faq-page */
+.faq-page{
+  text-align: left;
+  color: #878787;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.faq-title.center{
+  font-weight: 700;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.faq-suptitle{
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.faq-subtitle{
+  margin-bottom: 20px;
+}
+
+.faq-text{
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+
+/* wishList */
+.wishlist_wrapper{
+  color: #878787;
+}
+
+.filter-info{
+  color: #000;
+  text-align: left;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.products-found{
+  color: #222;
+  font-size: 15px;
+  border-right: 1px solid #87878754;
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+.products-found span{
+  color: #ab966f;
+}
+
+.filter-diapazone{
+  display: flex;
+  align-items: center;
+}
+
+.filter-remove-button{
+  background: transparent;
+  padding: 0px 7px;
+  cursor: pointer;
+}
+
+.filter-remove-button:focus{
+  border: none !important;
+}
+
+.filter-remove-button:hover{
+  border: none !important;
 }

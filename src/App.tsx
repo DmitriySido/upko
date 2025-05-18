@@ -12,6 +12,16 @@ import ProductItemPage from "./pages/ProductItemPage";
 import ScrollToTop from "./utils/ScrollToTop/ScrollToTop";
 import ExampleConfetti from "./components/Confeti/ExampleConfetti";
 import "./App.css";
+import FixedCart from "./components/Cart/FixedCart/FixedCart";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import RefundPolicy from "./pages/RefundPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Faq from "./pages/Faq";
+import Wishlist from "./pages/Wishlist";
+import { Filter } from "./components/Filter/Filter";
 
 const App: React.FC = () => {
   const items = useSelector((state: RootState) => state.cart.items);
@@ -27,14 +37,32 @@ const App: React.FC = () => {
       <div style={{ background: "#fff", minHeight: "100vh" }}>
         <DiscountBanner />
         <Header />
+        <FixedCart/>
         {totalPrice > 98 && <ExampleConfetti />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/shipping-policy" element={<ShippingPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+
+
+
+
+
+
+
+
           <Route path="/product/:slug/:index" element={<ProductItemPage />} />
         </Routes>
         <Footer />
         <Cart />
+        <Filter/>
       </div>
     </BrowserRouter>
   );

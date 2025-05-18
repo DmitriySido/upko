@@ -7,6 +7,7 @@ const Products: React.FC = () => {
   return (
     <main style={{ background: "#fff", width: "100%", minHeight: "100vh" }}>
       <ProductPromoBanner />
+      
       <ProductsGrid />
     </main>
   );

@@ -1,0 +1,14 @@
+.fixed-cart{
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 100px;
+}
+
+.fixed-cart-button{
+  background: #fff;
+  box-shadow: 2px 4px 10px #00000065;
+  border-radius: 100px;
+  height: 62px;
+  width: 62px;
+}

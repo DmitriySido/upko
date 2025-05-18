@@ -1,13 +1,17 @@
 import React, {useState} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import "./ProductItemInfo.css";
 import {ProductData} from "../../../utils/getProductData";
 import {QuantityCounter} from "../../../components/QuantityCounter";
 import {addItem, toggleCart} from "../../../store/cartSlice";
+import { addToWishlist } from "../../../store/wishlistSlice";
+import { RootState } from "../../../store/store";
 
 interface ProductItemInfoProps {
   productData: ProductData;
 }
+
+
 
 const ProductItemInfo: React.FC<ProductItemInfoProps> = ({productData}) => {
   const [quantity, setQuantity] = useState(1);
@@ -43,6 +47,20 @@ const discount = calculateDiscount();
     dispatch(toggleCart());
   };
 
+const wishlist = useSelector((state: RootState) => state.wishlist.items);
+  const isInWishlist = (productId: number) => {
+  return wishlist.some((item) => item.index === productId);
+};
+
+  const handleAddToWishlist = (
+    e: React.MouseEvent,
+    product: ProductData
+  ) => {
+    e.preventDefault();
+    dispatch(addToWishlist(product));
+  };
+
+
   return (
     <div className="product-item__info">
       <h1 className="product-item__title">{productData.title}</h1>
@@ -71,6 +89,18 @@ const discount = calculateDiscount();
         >
           Add to cart
         </button>
+
+
+
+
+        <div className={`add-to-wishlist-button-from-product-info ${isInWishlist(productData.index) ? "added" : ""}`} onClick={(e) => handleAddToWishlist(e, productData)}>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19C11 19 3 13.5 3 8.5C3 5.5 5.5 3 8.5 3C10.1 3 11 4.5 11 4.5C11 4.5 11.9 3 13.5 3C16.5 3 19 5.5 19 8.5C19 13.5 11 19 11 19Z" stroke="currentColor" strokeWidth="1" fill="none"></path></svg>
+        </div>
+
+
+
+
+
       </div>
       <div className="product-item__availability">
         Availability: <span>In Stock</span>

@@ -1,0 +1,199 @@
+.filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.filter__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.filter__content {
+    width: 400px;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    animation: slideInFilter 0.3s ease-out;
+}
+
+@keyframes slideInFilter {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.filter__header {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.filter__header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.filter__close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    line-height: 1;
+}
+
+.filter-suptitle{
+  color: #222;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+
+.filter-suptitle::before{
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 2px;
+  background: #222;
+  left: 20px;
+  top: 22px;
+}
+
+.filter-chckbox-label{
+  color: #222;
+  font-size: 14px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-checkbox{
+  margin-right: 10px;
+  margin-bottom: 3px;
+
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.filter-price{
+  color: #222;
+}
+
+
+.filter-price-input-wrapper{
+  width: 100%;
+}
+
+.filter-price-input-wrapper {
+  width: 100%;
+}
+
+.filter-price {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #222;
+}
+
+.filter-price span{
+  color: #878787;
+  font-weight: 100;
+}
+
+.filter-button-search{
+  border-radius: 100px;
+  border: 2px solid #222;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  transition: all .2s ease-in !important;
+}
+
+.filter-button-search:hover{
+  background: #ab966f;
+  color: #fff;
+  border: 2px solid #ab966f;
+}
+
+.filter-chckbox-label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+}
+
+.filter-chckbox-label.last{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.filter-inner input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  cursor: pointer;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.filter-range-wrapper{
+  padding: 0px 20px 20px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-checkbox:checked::before {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 12px;
+  color: #000;
+}

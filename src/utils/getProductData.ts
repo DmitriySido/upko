@@ -3,12 +3,12 @@ import productData from "../components/products/ProductsGrid/productData";
 export interface ProductData {
   id?: string;
   index: number;
-  img?: string;
-  imgHover?: string;
+  img: string;
+  imgHover: string;
   title: string;
   price: string;
   newPrice?: string; 
-  slug?: string;
+  slug: string;
   description?: { 
     main?: string;
     material?: string;
