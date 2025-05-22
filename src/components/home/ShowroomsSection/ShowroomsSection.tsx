@@ -4,31 +4,31 @@ import "./ShowroomsSection.css";
 const showrooms = [
   {
     city: "Showroom in Hamburg, Germany",
-    img: "/upko/images/showroom-1.webp",
-    hover: "/upko/images/model-2_grande.webp",
+    img: "/images/showroom-1.webp",
+    hover: "/images/model-2_grande.webp",
     hoverTitle: "Showroom in Hamburg, Germany",
     hoverDesc:
       "Showroom in Hamburg, Germany Boutique Bizarre, located in Hambur...",
   },
   {
     city: "Showroom in Paris-France",
-    img: "/upko/images/showroom-2.jpg",
-    hover: "/upko/images/upko-14-2.jpg",
+    img: "/images/showroom-2.jpg",
+    hover: "/images/upko-14-2.jpg",
     hoverTitle: "Showroom in Paris-France",
     hoverDesc:
       "Brigade Mondaine isn't just an e-commerce site where you can buy your favori...",
   },
   {
     city: "Showroom in Karlsruhe-Germany",
-    img: "/upko/images/showroom-3.jpg",
-    hover: "/upko/images/wechatimg258.jpg",
+    img: "/images/showroom-3.jpg",
+    hover: "/images/wechatimg258.jpg",
     hoverTitle: "Showroom in Karlsruhe-Germany",
     hoverDesc: `Baumwollseil.de" is one of Germany's leading kinky shops. The owner couple, Sabine Kraußer and Michael Pohl, along...`,
   },
   {
     city: "Showroom in Venice, Italy",
-    img: "/upko/images/showroom-4.jpg",
-    hover: "/upko/images/1_2b0f5d8f.jpg",
+    img: "/images/showroom-4.jpg",
+    hover: "/images/1_2b0f5d8f.jpg",
     hoverTitle: "Showroom in Venice, Italy",
     hoverDesc:
       "De Sade Venice is the first sensual avant-garde concept shop in Italy. We are a team that has made worldwide resear...",

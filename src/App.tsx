@@ -32,7 +32,7 @@ const App: React.FC = () => {
 }, 0);
 
   return (
-    <BrowserRouter basename="/upko/">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <div style={{ background: "#fff", minHeight: "100vh" }}>
         <DiscountBanner />

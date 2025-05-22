@@ -2,7 +2,7 @@ const AboutUs = () => {
 
   return(
     <main className="about-us-page container" style={{ background: "#fff", width: "100%", minHeight: "100vh" }}>
-      <img className="about-us-first-img" src="/upko/images/aboutus-1.webp" alt="Culture. Intimacy. Imagination" />
+      <img className="about-us-first-img" src="/images/aboutus-1.webp" alt="Culture. Intimacy. Imagination" />
       <p className="about-us-quote">"Culture. Intimacy. Imagination"</p>
 
       <p className="about-us-text">
@@ -16,19 +16,19 @@ const AboutUs = () => {
       <p className="about-us-text">This is precisely the reason UPKO was founded.</p>
 
 
-      <img src="/upko/images/aboutus-2.webp" alt="" />
+      <img src="/images/aboutus-2.webp" alt="" />
 
       <p className="about-us-text">Driven by a passionate team of primarily LGBTQ, UPKO embraces diversity, fostering a uniquely insightful perspective that enriches our products. Our mission is dedicated to crafting captivating sexual experiences tailored to meet a wide range of needs. With five years of steadfast commitment since our inception, UPKO remains steadfast in upholding the essence of supreme design while infusing our products with rich cultural attributes.</p>
       <p className="about-us-text">We utilize premium leather from Italy’s second-largest supplier, known for providing materials to luxury brands like Givenchy, and most of our metal parts are produced with customized molds.</p>
 
-    <img src="/upko/images/aboutus-3.webp" alt="" />
+    <img src="/images/aboutus-3.webp" alt="" />
 
     <h3 className="about-us-title">A Stunning Debut</h3>
 
       <p className="about-us-text">In 2019, UPKO made a remarkable debut at the Shanghai ADCEXPO, an international adult industry exhibition. We unveiled our co-branding collection, "The Doll," which captivated professional buyers. Among this collection, the Rose Ball Gag emerged as the best seller, featuring a patented 3D modeling design crafted from Dow Corning silicone, ensuring both aesthetic appeal and safety.</p>
       <p className="about-us-text">Following this debut, UPKO gained significant attention in the niche market, inspiring us to explore new product series and enhance brand recognition through collaborations and offline events.</p>
 
-    <img src="/upko/images/aboutus-4.webp" alt="" />
+    <img src="/images/aboutus-4.webp" alt="" />
 
     <h3 className="about-us-title">EXQUISITE CRAFTSMANSHIP</h3>
 
@@ -39,7 +39,7 @@ const AboutUs = () => {
 </p>
       <p className="about-us-text">On the journey to discover pleasure, UPKO will always be your most loyal companion.</p>
 
-    <img src="/upko/images/aboutus-5.webp" alt="" />
+    <img src="/images/aboutus-5.webp" alt="" />
 
       <p className="about-us-text"></p>
       <p className="about-us-text"></p>

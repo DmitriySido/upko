@@ -4,13 +4,13 @@ import "./ThreeImagesSection.css";
 
 const images = [
   {
-    src: "/upko/images/WechatIMG39.jpg",
+    src: "/images/WechatIMG39.jpg",
   },
   {
-    src: "/upko/images/WechatIMG2181.jpg",
+    src: "/images/WechatIMG2181.jpg",
   },
   {
-    src: "/upko/images/WechatIMG38.jpg",
+    src: "/images/WechatIMG38.jpg",
   },
 ];
 

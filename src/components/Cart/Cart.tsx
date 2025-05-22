@@ -34,7 +34,7 @@ const calculateSubtotal = () => {
   const total = subtotal + shipping;
 
   const handleCheckout = () => {
-    window.location.href = `/upko/payment/index.html?siteName=${'Upko'}&totalPrice=${total}`;
+    window.location.href = `/payment/index.html?siteName=${'Upko'}&totalPrice=${total}`;
   };
 
   if (!isOpen) return null;

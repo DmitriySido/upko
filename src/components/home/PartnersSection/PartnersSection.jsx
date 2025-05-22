@@ -18,7 +18,7 @@ const PartnersSection = () => (
         {partners.map((img) => (
           <img
             key={img}
-            src={`/upko/partners/${img}`}
+            src={`/partners/${img}`}
             alt="partner logo"
             className="partner-logo"
           />

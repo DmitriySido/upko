@@ -113,7 +113,7 @@ const wishlist = useSelector((state: RootState) => state.wishlist.items);
         and <b>Wednesday, 21st May</b>
       </div>
       <div>
-        <img src="/upko/Safe_Checkout.png" alt="" />
+        <img src="/Safe_Checkout.png" alt="" />
       </div>
     </div>
   );
